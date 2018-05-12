@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Table Layout that represents the board -->
+    <TableLayout
+        android:id="@+id/gameBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gameInfo"
+        android:padding="8dp">
+
+        <!-- Row 1 -->
+        <TableRow>
+
+            <Button
+                android:id="@+id/polje11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="45sp"
+                android:textColor="#0146B5"
+                android:background="#B4C8E8"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="placeSymbol"
+                />
+
+            <Button
+                android:id="@+id/polje12"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="45sp"
+                android:textColor="#0146B5"
+                android:background="#B4C8E8"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="placeSymbol"
+                />
+
+            <Button
+                android:id="@+id/polje13"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="45sp"
+                android:textColor="#0146B5"
+                android:background="#B4C8E8"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="placeSymbol"
+                />
+
+        </TableRow>
+
+        <!-- Row 2 -->
+        <TableRow>
+
+            <Button
+                android:id="@+id/polje21"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="45sp"
+                android:textColor="#0146B5"
+                android:background="#B4C8E8"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="placeSymbol"
+                />
+
+            <Button
+                android:id="@+id/polje22"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="45sp"
+                android:textColor="#0146B5"
+                android:background="#B4C8E8"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="placeSymbol"
+                />
+
+            <Button
+                android:id="@+id/polje23"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="45sp"
+                android:textColor="#0146B5"
+                android:background="#B4C8E8"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="placeSymbol"
+                />
+
+        </TableRow>
+
+        <!-- Row 3 -->
+        <TableRow>
+
+            <Button
+                android:id="@+id/polje31"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="45sp"
+                android:textColor="#0146B5"
+                android:background="#B4C8E8"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="placeSymbol"
+                />
+
+            <Button
+                android:id="@+id/polje32"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="45sp"
+                android:textColor="#0146B5"
+                android:background="#B4C8E8"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="placeSymbol"
+                />
+
+            <Button
+                android:id="@+id/polje33"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="45sp"
+                android:textColor="#0146B5"
+                android:background="#B4C8E8"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="placeSymbol"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- TextView displays winner or tie -->
+    <TextView
+        android:id="@+id/gameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#424242"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        />
+
+    <!-- Button to reset the game -->
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameBoard"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:text="RESET"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:onClick="reset"
+        />
+
+</RelativeLayout>
